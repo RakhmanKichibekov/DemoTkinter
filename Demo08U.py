@@ -10,3 +10,13 @@ def CodeText(S):
         CC = chr(K)
         SS = SS + CC
     return SS
+
+def DecodeText(S):
+    SS = ""
+    for i in range(len(S)):
+        C = S[i]
+        K = ord(C)
+        K -= 1
+        CC = chr(K)
+        SS = SS + CC
+    return SS
